@@ -1,0 +1,14 @@
+base 3-2
+bat 0.25.0-4
+eza 0.23.0-1
+fd 10.3.0-1
+htop 3.4.1-1
+intel-ucode 20250812-1
+neovim 0.11.3-1
+networkmanager 1.54.0-1
+refind 0.14.2-1
+reflector 2023-3
+ripgrep-all 0.10.9-1
+starship 1.23.0-1
+xdg-user-dirs 0.18-2
+zoxide 0.9.8-2

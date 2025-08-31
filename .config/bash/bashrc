@@ -1,0 +1,8 @@
+[[ -f "$HOME/.config/bash/bash_aliases" ]] && source "$HOME/.config/bash/bash_aliases"
+
+export PATH="$HOME/.local/bin:$PATH"
+export EDITOR="nvim"
+
+eval "$(fzf --bash)"
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"

@@ -1,0 +1,4 @@
+alias l="eza -lah"
+alias lt="eza -T -h -L 4"
+alias vi="nvim"
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
