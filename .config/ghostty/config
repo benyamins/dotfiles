@@ -19,7 +19,8 @@
 # ==========================
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
-# font-family = Iosevka
+#font-family = GeistMono Nerd Font
+font-family = Iosevka Nerd Font
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -27,7 +28,7 @@
 # key=value
 # key= value
 # key =value
-# key = value
+mouse-hide-while-typing = true
 #
 # # Any line beginning with a # is a comment. It's not possible to put
 # # a comment after a config option, since it would be interpreted as a
