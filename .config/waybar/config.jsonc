@@ -106,8 +106,15 @@
     },
     "clock": {
         // "timezone": "America/New_York",
+	"format": "{:%Y-%m-%d %H:%M}",
         "format-alt": "{:%Y-%m-%dT%H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode": "year",
+			"mode-mon-col": 4,
+			//"on-scroll": 12
+			//"week-pos": "left"
+		}
     },
     "memory": {
         "format": "{}% "
