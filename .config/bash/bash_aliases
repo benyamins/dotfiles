@@ -3,3 +3,4 @@ alias lt="eza -T -h -L 4"
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias nvi="NVIM_APPNAME='nvim-kickstart' neovide --fork"
 alias vi="NVIM_APPNAME='nvim-kickstart' nvim"
+alias gs='git status'

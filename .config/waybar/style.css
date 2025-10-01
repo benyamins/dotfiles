@@ -1,15 +1,34 @@
+@import "themes/mocha.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 500
+}
+
+#custom-power:hover {
+	opacity: 0.8
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+    /* background-color: rgba(43, 48, 59, 0.5); */
+    /* background-color: shade(@base, 1); */
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+  background: transparent;
+	/* border: 2px solid alpha(@crust, 0.5); */
+  color: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+#custom-power {
+  color: @text;
+  background: rgba(0, 0, 0, 0.1);
+  /* padding: 0 10px; */
+  margin: 0 10px;
+	font-size: 21px;
+  /* border: solid 2px @foreground; */
+  /* min-height: 10px; */
 }
 
 window#waybar.hidden {
@@ -77,25 +96,15 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
-    color: #ffffff;
+
+#clock {
+  padding: 0 14px;
+  margin: 2px 5px;
+  /* border: solid 2px @foreground; */
+  border-radius: 10px;
+  color: @text;
+  background-color: @surface1;
+  font-weight: 700
 }
 
 #window,
@@ -113,38 +122,14 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-    background-color: #64727D;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
 /*
 #battery.charging, #battery.plugged {
     color: #ffffff;
     background-color: #26A65B;
 } */
 
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
 #power-profiles-daemon {
     padding-right: 15px;
@@ -175,7 +160,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: #1e1e2e;
 }
 
 #disk {
@@ -195,8 +180,12 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+  background-color: @surface1;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0 14px;
+  margin: 2px 5px;
 }
 
 #pulseaudio.muted {
@@ -334,4 +323,28 @@ menu {
 }
 menuitem {
 	border-radius: 15px;
+}
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+  background-color: @surface1;
+  color: @text;
+  font-weight: 700;
+  border-radius: 9px;
+  padding: 0 14px;
+  margin: 2px 5px;
 }

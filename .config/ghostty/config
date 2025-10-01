@@ -43,4 +43,8 @@ mouse-hide-while-typing = true
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
+#theme = catppuccin-mocha.conf
 font-size = 10
+theme = Rose Pine Moon
+link-url = true
+link-previews = true
